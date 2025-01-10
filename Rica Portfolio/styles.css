@@ -13,6 +13,10 @@ body {
     z-index: 99;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 figure {
     background-color: #1a1e1d;
     display: flex;
@@ -106,6 +110,7 @@ figure {
 }
 
 .figbtn {
+    margin-left: 10px;
     width: 260px;
     height: 40px;
     border-radius: 55px;
@@ -113,8 +118,44 @@ figure {
     font-family: "Noto Sans JP";
     font-weight: 500;
     transition: all 0.4s ease-in-out;
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    border: #00000000;
+    background-image: linear-gradient(to right, #7b7b7b, #f5f5f5);
 }
 
 .figbtn:hover {
-    color: #fff;
+    background-image: linear-gradient(to right, #1dbaa7, #04f7d9);
+    transform: scale(1.05);
+}
+
+.div a {
+    text-decoration: none;
+}
+.footertxt {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.icons {
+    border: #000000 1px solid;
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    img {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    transition: transform 0.2s ease-in-out;
+}
+
+.icons:hover {
+    transform: scale(1.10);
 }
