@@ -210,27 +210,104 @@ header {
         font-size: 10px;
         margin: 0;
         font-family: "Noto Sans JP";
-        font-weight: 400;
         transition: font-weight 0.2s ease-in-out;
     }
     h1 {
         border-bottom:1px solid #000000; width:60px; padding-bottom:1px;
         text-align: center;
-        transition: border 0.2s ease-in-out;
-        -webkit-transition:  border 0.2s ease-in-out;
+        font-weight: bold;
+        transition: border-width 0.6s linear;
     }
     a {
         text-decoration: none;
         color: #000000;
+        font-weight: 400;
+        text-align: center;
     }
 }
 
 .navtext:hover {
     font-weight: 1000;
+    border-bottom: 1px solid black;
 }
 
-header:hover {
-    h1 {
-        border-bottom: 2px black; width:60px; padding-bottom:1px;
+main {
+    h5 {
+        padding-left: 55px;
+        font-size: 30px;
+        margin: 0;
+        font-family: "Noto Sans Jp";
+        font-weight: 500;
     }
+    section {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        gap: 10px;
+        div {
+            cursor: pointer;
+        }
+    }
+}
+
+.img {
+    transition: opacity .4s ease-in-out;
+    opacity: .8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+section .modal {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    overflow-y: hidden;
+}
+
+.modal span {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-family: "Noto Sans JP";
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.modal img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 600px;
+    max-width: 1000px;
+}
+
+.cgallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rgallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.comicsec {
+        padding-left: 80px;
+        font-size: 20px;
+        margin: 0;
+        font-family: "Noto Sans Jp";
+        font-weight: 500;;
 }
