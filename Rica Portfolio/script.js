@@ -1,16 +1,16 @@
+function confirmEmail() {
+    if (confirm("Do you want to proceed to email?")) {
+        window.location.href = "mailto:shizocatto@gmail.com";
+    }
+    else {
+        console.log('Edi wag.');
+      }
+}
+
 window.onload = function() {
     setTimeout(() => {
         document.getElementById('spsc').classList.toggle('fade');
     }, 2000);
-
-    function confirmEmail() {
-        if (confirm("Do you want to proceed to email?")) {
-            window.location.href = "mailto:shizocatto@gmail.com";
-        }
-        else {
-            console.log('Edi wag.');
-          }
-    }
 
     document.querySelectorAll('.img').forEach(image => {
         image.onclick = () => {
@@ -27,4 +27,22 @@ window.onload = function() {
         };
     });
     
+
+    let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+mybutton.onclick = topFunction;
 };
