@@ -197,13 +197,11 @@ footer {
 }
 
 .heroimage {
-    padding-top: 20px;
+    margin: 20px 0 0px 0;
     display: flex;
     justify-content: center;
-    margin: 0;
     img {
         margin: inherit;
-        padding: 0px 50px 0px 0px;
         width: 200px;
     }
 }
@@ -211,7 +209,7 @@ footer {
 .navbtn {
     display: flex;
     position: absolute;
-    top: 170px;
+    top: 180px;
     left: 50px;
     gap: 20px;
 }
@@ -260,6 +258,7 @@ header {
 }
 
 main {
+    margin-top: 50px;
     h5 {
         padding-left: 55px;
         font-size: 30px;
@@ -368,4 +367,56 @@ section .modal {
     top: 0px;
     opacity: .1;
     z-index: -1;
+}
+
+.jumpto {
+    margin-top: 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    .item {
+        text-decoration: none;
+        font-family: "Noto Sans JP";
+        color: white;
+        font-weight: 400;
+        transition: font-weight .2s ease-in-out;
+        text-align: center;
+    }
+    .item:hover {
+        font-weight: 1000;
+    }
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0 50px;
+    font-family: "Noto Sans JP";
+    span {
+        
+        vertical-align: middle;
+    }
+    div p {
+        font-weight: 500;
+    }
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+#li1 {
+    width: 700px;
+    position: fixed;
+    left: 50px; top: 200px;
+    opacity: .2;
+    z-index: -1;
+}
+
+#li2 {
+    width: 700px;
+    position: fixed;
+    opacity: 0.2;
+    z-index: -1;
+    top: 200px; right: 50px;
 }
