@@ -14,7 +14,7 @@ window.onload = function() {
 
     document.querySelectorAll('.img').forEach(image => {
         image.onclick = () => {
-            console.log("Image clicked:", image.getAttribute('src')); //This is for debugging only ;^;
+            console.log("Does Maya shave? Yes she does. Also Image clicked:", image.getAttribute('src')); //This is for debugging only ;^;
             document.querySelector('.modal').style.display = 'block';
             document.querySelector('.modal img').src = image.getAttribute('src');
         };
