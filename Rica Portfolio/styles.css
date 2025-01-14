@@ -729,14 +729,6 @@ article {
             }
         }
     }
-
-    .navbtn {
-        display: flex;
-        position: absolute;
-        top: 230px;
-        left: 105px;
-        gap: 20px;
-    }
     
     a {
         img {
