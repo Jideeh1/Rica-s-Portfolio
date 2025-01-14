@@ -8,9 +8,6 @@ function confirmEmail() {
 }
 
 window.onload = function() {
-    setTimeout(() => {
-        document.getElementById('spsc').classList.toggle('fade');
-    }, 2000);
 
     document.querySelectorAll('.img').forEach(image => {
         image.onclick = () => {

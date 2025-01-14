@@ -17,6 +17,19 @@ body {
     display: none;
 }
 
+.stext {
+    margin: 0;
+    font-size: 15px;
+}
+
+#figurem {
+    display: none;
+}
+
+.tempfoot2 {
+    display: none;
+}
+
 figure {
     background-color: #1a1e1d;
     display: flex;
@@ -51,41 +64,6 @@ footer {
             color: #ada9a9;
         }
     }
-}
-
-#spsc {
-    background-color: #edecf2;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-    transition: all 1s ease;
-    justify-content: center;
-    cursor: default;
-}
-
-.spsct {
-    color: black;
-    font-size: 100px;
-    text-align: center;
-    margin: 0;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    background: -webkit-linear-gradient(0deg, #757070, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-#secondaryct {
-    font-size: 28px;
-    margin: 0;
-    font-weight: 3;
-}
-
-#spsc.fade {
-    opacity: 0;
 }
 
 .header {
@@ -307,6 +285,23 @@ main {
     z-index: 2;
 }
 
+.mgal2 {
+    display: none;
+}
+
+.tempsec {
+    padding: 10px 10px 30px 10px;
+}
+
+.tempsec2 {
+    div {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+}
+
 section .modal {
     position: fixed;
     top: 0; left: 0;
@@ -406,6 +401,14 @@ section .modal {
     }
 }
 
+.jumpto2 .item {
+    display: none;
+}
+
+.jumpto3 .item {
+    display: none;
+}
+
 article {
     display: flex;
     justify-content: space-evenly;
@@ -448,7 +451,18 @@ article {
     }
 }
 
-@media (max-width:1024px) {
+.mgal {
+    display: none;
+}
+
+.navwrap {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    gap: 10px;
+}
+
+@media (max-width:1500px) {
     .figbtn {
         width: 200px;
         height: 30px;
@@ -460,5 +474,299 @@ article {
     #figst {
         font-size: 15px;
     }
+    article {
+        img {
+            width: 400px;
+        }
+    }
+    .gal {
+        display: none;
+    }
+    .mgal {
+        display: block;
+    }
 
+    footer {
+        padding: 50px;
+        div {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .fitem {
+        font-size: 15px;
+    }
+
+    .jumpto .item {
+        display: none;
+    }
+
+    .jumpto2 {
+        margin-top: 10px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        .item {
+            display: block;
+            text-decoration: none;
+            font-family: "Noto Sans JP";
+            color: white;
+            font-weight: 400;
+            transition: font-weight .2s ease-in-out;
+            text-align: center;
+        }
+        .item:hover {
+            font-weight: 1000;
+        }
+    }
+
+    .navbtn {
+        display: flex;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        gap: 30px;
+    }
+    
+    a {
+        img {
+            width: 30px;
+        }
+    }
+    #figurem {
+        display: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .heroimg {
+        width: calc(100% - 26px);
+    }
+    
+    figure {
+        display: none;
+    }
+    #figurem {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btnwrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .figbtn {
+        width: 150px;
+        height: 25px;
+        font-size: 12px;
+
+    }
+    .fth {
+        font-size: calc(100% + 20px)
+    }
+    #figst {
+        font-size: 10px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .footertxt {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .icons {
+        padding: 10px;
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .jumpto .item {
+        display: none;
+    }
+
+    .jumpto2 {
+        display: none;
+    }
+
+    .jumpto3 {
+        margin-top: 10px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        .item {
+            display: block;
+            text-decoration: none;
+            font-family: "Noto Sans JP";
+            color: white;
+            font-weight: 400;
+            transition: font-weight .2s ease-in-out;
+            text-align: center;
+            font-size: 9px;
+        }
+        .item:hover {
+            font-weight: 1000;
+        }
+    }
+
+    .navbtn {
+        display: flex;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        gap: 30px;
+    }
+    
+    a {
+        img {
+            width: 30px;
+        }
+    }
+
+    .extras {
+        width: 100%;
+    }
+
+    article {
+        font-size: 10px;
+        .wrapper {
+            width: calc(100% - 250px)
+        }
+        div {
+            h6 {
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .stext {
+        font-size: calc(100% - 5px)
+    }
+
+    footer {
+        padding: 50px;
+        div {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .fitem {
+        font-size: 20px;
+    }
+
+    .com {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        img {
+            width: 600px;
+        }
+    }
+
+    .footertxt {
+        padding-top: 20px;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .icons {
+        padding: 20px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .tempsec {
+        padding: 0;
+        div {
+            display: none;
+        }
+        h1 {
+            display: none;
+        }
+    }
+
+    .tempsec2 {
+        padding: 0px 25px 25px 25px;
+        .icons {
+            display: block;
+            padding: 10px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        h1 {
+            display: block;
+            font-size: 15px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .mgal2 {
+        display: block;
+    }
+    main {
+        h5 {
+            padding: 25px;
+            text-align: center;
+        }
+        section {
+            h5 {
+                text-align: center;
+            }
+        }
+    }
+
+    .navbtn {
+        display: flex;
+        position: absolute;
+        top: 230px;
+        left: 105px;
+        gap: 20px;
+    }
+    
+    a {
+        img {
+            width: 20px;
+        }
+    }
+    .mgal {
+        display: none;
+    }
+    .tempfoot {
+        display: none;
+    }
+    .tempfoot2 {
+        display: none;
+        div {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+    .fitem {
+        font-size: 10px;
+    }
+
+    .maya {
+        width: 500px;
+        right: 20px ;
+        top: 150px;
+    }
+    .comicsec {
+        padding: 10px;
+    }
 }
