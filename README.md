@@ -1,1 +1,1 @@
-View website: https://app.netlify.com/sites/shizocatto/overview
+View website: https://shizocatto.netlify.app/
